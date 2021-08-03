@@ -3,7 +3,7 @@
 ### bastion hosts
 module "bastion-asg" {
   source  = "terraform-aws-modules/autoscaling/aws"
-  version = "~> 3.0"
+ # version = "~> 3.0"
   name    = "${var.cluster-name}-bastion"
 
   lc_name = "${var.cluster-name}-bastion-lc"
